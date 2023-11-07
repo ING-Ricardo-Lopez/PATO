@@ -88,15 +88,13 @@ class ProcessFrame:
             'IMPROPER_SQUAT':0
             
         }
-        
-        self.FEEDBACK_ID_MAP = {
-                                0: ('BEND BACKWARDS', 215, (0, 153, 255)),
-                                1: ('BEND FORWARD', 215, (0, 153, 255)),
-                                2: ('KNEE FALLING OVER TOE', 170, (255, 80, 80)),
-                                3: ('SQUAT TOO DEEP', 125, (255, 80, 80))
-                               }
 
-        
+        self.FEEDBACK_ID_MAP = {
+                                0: ('Inclinate hacia atras', 215, (0, 153, 255)),
+                                1: ('Inclinate hacia adelante', 215, (0, 153, 255)),
+                                2: ('Tu rodilla esta sobre tu pie', 170, (255, 80, 80)),
+                                3: ('Sentadilla demaciado profunda', 125, (255, 80, 80))
+                               }
 
 
     def _get_state(self, knee_angle):
@@ -136,11 +134,11 @@ class ProcessFrame:
         if lower_hips_disp:
             draw_text(
                     frame, 
-                    'LOWER YOUR HIPS', 
+                    'Baja tus caderas', 
                     pos=(30, 80),
                     text_color=(0, 0, 0),
                     font_scale=0.6,
-                    text_color_bg=(255, 255, 0)
+                   ## text_color_bg=(255, 255, 0)
                 )  
 
         for idx in np.where(c_frame)[0]:
@@ -150,7 +148,7 @@ class ProcessFrame:
                     pos=(30, dict_maps[idx][1]),
                     text_color=(255, 255, 230),
                     font_scale=0.6,
-                    text_color_bg=dict_maps[idx][2]
+                   ## text_color_bg=dict_maps[idx][2]
                 )
 
         return frame
@@ -206,7 +204,7 @@ class ProcessFrame:
 
                 draw_text(
                     frame, 
-                    "CORRECT: " + str(self.state_tracker['SQUAT_COUNT']), 
+                    "CORRECTA: " + str(self.state_tracker['SQUAT_COUNT']), 
                     pos=(int(frame_width*0.68), 30),
                     text_color=(255, 255, 230),
                     font_scale=0.7,
@@ -216,7 +214,7 @@ class ProcessFrame:
 
                 draw_text(
                     frame, 
-                    "INCORRECT: " + str(self.state_tracker['IMPROPER_SQUAT']), 
+                    "INCORRECTA: " + str(self.state_tracker['IMPROPER_SQUAT']), 
                     pos=(int(frame_width*0.68), 80),
                     text_color=(255, 255, 230),
                     font_scale=0.7,
@@ -227,7 +225,7 @@ class ProcessFrame:
                 
                 draw_text(
                     frame, 
-                    'CAMERA NOT ALIGNED PROPERLY!!!', 
+                    'La camara no esta alineada!', 
                     pos=(30, frame_height-60),
                     text_color=(255, 255, 230),
                     font_scale=0.65,
@@ -237,7 +235,7 @@ class ProcessFrame:
                 
                 draw_text(
                     frame, 
-                    'OFFSET ANGLE: '+str(offset_angle), 
+                    'Fuera de angulo: '+str(offset_angle), 
                     pos=(30, frame_height-30),
                     text_color=(255, 255, 230),
                     font_scale=0.65,
