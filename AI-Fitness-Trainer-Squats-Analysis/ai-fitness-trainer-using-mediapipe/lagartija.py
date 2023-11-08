@@ -54,6 +54,13 @@ class PushUpDetector:
             in_push_up_position = self._is_push_up_position(nose, left_shoulder, right_shoulder, left_elbow, right_elbow, left_wrist, right_wrist)
             self.state_tracker['IN_PUSH_UP_POSITION'] = in_push up_position  # Actualiza el estado de la posición de lagartija
 
+
+
+
+ # a como vale verga
+ # ando haciendo pruebas nomas
+
+
             if in_push_up_position:
                 # Incrementa el contador de lagartijas cuando está en posición
                 self.state_tracker['PUSH_UP_COUNT'] += 1
