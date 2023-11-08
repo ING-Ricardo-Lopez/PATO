@@ -2,6 +2,25 @@
 
 **Este repositorio contiene código para [AI PATO Usando MediaPipe: Analisis de sentadilla](https://learnopencv.com/ai-fitness-trainer-using-mediapipe/) blogpost**
 
+# Universidad Autonoma de Occidente
+# Carrera "INGENIERIA EN DESARROLLO DE SOFTWARE"
+# Proyecto 3er semestre
+# Nombre de proyecto: IA PATO
+# Descripcion del proyecto
+
+Este proyecto tiene como finalidad crear una inteligencia artificial utilizando
+python,aprovechando su versatilidad de librerias.
+
+Librerias utilizadas en este proyecto
+-opencv
+-mediapipe
+-numpy
+-streamlit
+-tensorflow lite
+
+Tecnologias implementadas
+-Python
+-Docker
 ## Creación de un entrenador físico con IA que utiliza MediaPipe Pose para analizar sentadillas
 
 El blog lo ayudará a crear una aplicación Fitness Trainer basada en inteligencia artificial que analiza las sentadillas. <br> <br> 
