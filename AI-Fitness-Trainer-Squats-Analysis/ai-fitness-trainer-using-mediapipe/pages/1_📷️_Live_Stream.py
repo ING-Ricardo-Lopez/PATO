@@ -36,7 +36,7 @@ pose = get_mediapipe_pose()
 if 'download' not in st.session_state:
     st.session_state['download'] = False
 
-output_video_file = f'output_live.flv'
+output_video_file = f'output_live.mp4'
 
   
 
