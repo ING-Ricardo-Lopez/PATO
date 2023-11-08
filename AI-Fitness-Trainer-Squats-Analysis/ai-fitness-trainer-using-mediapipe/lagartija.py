@@ -9,7 +9,7 @@ class poseDetector():
     def __init__(self, mode=False, complexity=1, smooth_landmarks=True,
                  enable_segmentation=False, smooth_segmentation=True,
                  detectionCon=0.5, trackCon=0.5):
-        
+        #
         # Inicializa los parámetros de configuración
         self.mode = mode 
         self.complexity = complexity
