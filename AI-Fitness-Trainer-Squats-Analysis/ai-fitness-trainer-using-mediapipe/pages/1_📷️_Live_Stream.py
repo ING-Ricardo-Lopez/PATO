@@ -65,7 +65,7 @@ download_button = st.empty()
 
 if os.path.exists(output_video_file):
     with open(output_video_file, 'rb') as op_vid:
-        download = download_button.download_button('Download Video', data = op_vid, file_name='output_live.mp4') #cambie el formato flv por mp4 XD - Aqui estubo el Shueko
+        download = download_button.download_button('Download Video', data = op_vid, file_name='output_live.flv') #cambie el formato flv por mp4 XD - Aqui estubo el Shueko
 
         if download:
             st.session_state['download'] = True
