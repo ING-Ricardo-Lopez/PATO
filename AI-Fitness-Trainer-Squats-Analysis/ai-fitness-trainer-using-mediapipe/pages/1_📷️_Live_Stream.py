@@ -75,8 +75,3 @@ if os.path.exists(output_video_file) and st.session_state['download']:
     os.remove(output_video_file)
     st.session_state['download'] = False
     download_button.empty()
-
-
-    
-
-
