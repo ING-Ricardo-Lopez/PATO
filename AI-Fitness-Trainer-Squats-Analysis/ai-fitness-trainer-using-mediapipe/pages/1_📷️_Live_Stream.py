@@ -37,7 +37,8 @@ if 'download' not in st.session_state:
     st.session_state['download'] = False
 
 output_video_file = f'output_live.flv' #cambie el formato flv por mp4 XD - Aqui estubo el Shueko
-
+                                 #soy un fantasma alv 
+                                 #buuuuuuuuuuuuuuuuuuuuuuuuu
   
 
 def video_frame_callback(frame: av.VideoFrame):
