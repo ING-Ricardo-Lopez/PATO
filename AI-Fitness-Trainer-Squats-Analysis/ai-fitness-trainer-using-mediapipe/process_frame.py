@@ -465,7 +465,7 @@ class ProcessFrame:
                  
                 draw_text(
                     frame, 
-                    "CORRECT: " + str(self.state_tracker['SQUAT_COUNT']), 
+                    "CORRECTA: " + str(self.state_tracker['SQUAT_COUNT']), 
                     pos=(int(frame_width*0.68), 30),
                     text_color=(255, 255, 230),
                     font_scale=0.7,
@@ -475,7 +475,7 @@ class ProcessFrame:
 
                 draw_text(
                     frame, 
-                    "INCORRECT: " + str(self.state_tracker['IMPROPER_SQUAT']), 
+                    "INCORRECTA: " + str(self.state_tracker['IMPROPER_SQUAT']), 
                     pos=(int(frame_width*0.68), 80),
                     text_color=(255, 255, 230),
                     font_scale=0.7,
@@ -511,7 +511,7 @@ class ProcessFrame:
 
             draw_text(
                     frame, 
-                    "CORRECT: " + str(self.state_tracker['SQUAT_COUNT']), 
+                    "CORRECTA: " + str(self.state_tracker['SQUAT_COUNT']), 
                     pos=(int(frame_width*0.68), 30),
                     text_color=(255, 255, 230),
                     font_scale=0.7,
@@ -521,7 +521,7 @@ class ProcessFrame:
 
             draw_text(
                     frame, 
-                    "INCORRECT: " + str(self.state_tracker['IMPROPER_SQUAT']), 
+                    "INCORRECTA: " + str(self.state_tracker['IMPROPER_SQUAT']), 
                     pos=(int(frame_width*0.68), 80),
                     text_color=(255, 255, 230),
                     font_scale=0.7,
