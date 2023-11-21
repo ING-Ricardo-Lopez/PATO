@@ -9,6 +9,7 @@ piso = 2848
 mp_drawing = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose
 cap = cv2.VideoCapture(0)#no detecta la camara esta mamadaghc
+                        #'output_sample.mp4'
 
 with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
     while True:
@@ -39,16 +40,16 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
             elif inicio and piso - left_foot_index[1] < 10:
                 contador = contador + 1
                 inicio = 0
-        else:
+       # else:
             # Manejo cuando no se detectan landmarks
-            left_foot_index = (0, 0)  # Establecer un valor predeterminado o realizar alguna acción adecuada
+            #left_foot_index = (0, 0)  # Establecer un valor predeterminado o realizar alguna acción adecuada
             # O simplemente omitir esta iteración usando 'continue'
 
         mp_drawing.draw_landmarks(img, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
 
         img = cv2.putText(img, "Numero de saltos: " + str(contador), (50, 650),
-                          cv2.FONT_HERSHEY_SIMPLEX, 5, (255, 0, 0), 10, cv2.LINE_AA)
-
+                          cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 0, 0), 10, cv2.LINE_AA)#Modificar el tamaño de el texto que se muestra en pantalla
+                                                    #Modificar el color del texto en pantalla
         cv2.imshow('Contador de saltos', img)
         if cv2.waitKey(1) & 0xff == ord('q'):
             break
