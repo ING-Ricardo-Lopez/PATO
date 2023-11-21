@@ -36,8 +36,9 @@ pose = get_mediapipe_pose()
 if 'download' not in st.session_state:
     st.session_state['download'] = False
 
-output_video_file = f'output_live.flv'
-
+output_video_file = f'output_live.flv' #cambie el formato flv por mp4 XD - Aqui estubo el Shueko
+                                 #soy un fantasma alv 
+                                 #buuuuuuuuuuuuuuuuuuuuuuuuu
   
 
 def video_frame_callback(frame: av.VideoFrame):
@@ -64,7 +65,7 @@ download_button = st.empty()
 
 if os.path.exists(output_video_file):
     with open(output_video_file, 'rb') as op_vid:
-        download = download_button.download_button('Download Video', data = op_vid, file_name='output_live.flv')
+        download = download_button.download_button('Download Video', data = op_vid, file_name='output_live.flv') #cambie el formato flv por mp4 XD - Aqui estubo el Shueko
 
         if download:
             st.session_state['download'] = True
